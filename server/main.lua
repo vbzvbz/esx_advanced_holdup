@@ -44,7 +44,7 @@ function AddMoneyToBanks()
 
 	for _, v in pairs(Config.Zones) do
 		if v.MoneyRegeneration ~= nil then
-			local partOfCurrentMoney 	= ESX.Round(v.CurrentMoney * Config.PercentCurrentMoney / 100)
+			local partOfCurrentMoney 	= ESX.Math.Round(v.CurrentMoney * Config.PercentCurrentMoney / 100)
 			local randomMoneyToBank 	= math.random(partOfCurrentMoney, partOfCurrentMoney * Config.MaxRandomMultiplier)
 			v.CurrentMoney = v.CurrentMoney - randomMoneyToBank
 			Config.Zones[v.BankToDeliver].CurrentMoney = Config.Zones[v.BankToDeliver].CurrentMoney + randomMoneyToBank
