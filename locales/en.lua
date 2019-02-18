@@ -1,6 +1,6 @@
 Locales['en'] = {
 
-	['press_to_rob'] = 'press ~INPUT_CONTEXT~ to ~o~~h~begin the robbery~s~',
+	['press_to_rob'] = 'Press ~INPUT_LOOK_BEHIND~ to ~o~~h~begin the robbery~s~',
 	['robbery_in_progress'] = 'robbery [~y~%s~s~] in progress : ~r~%s~s~ seconds remaining',
 	['already_robbed_1'] = '~o~This store has already been robbered~s~',
 	['already_robbed_2'] = 'wait ~r~%s~s~ seconds before rob it again',
