@@ -250,7 +250,7 @@ Citizen.CreateThread(function()
 
 			ESX.ShowHelpNotification(CurrentActionMsg)
 
-			if IsControlJustReleased(1,  Keys['E']) and GetLastInputMethod(2) then
+			if IsControlJustReleased(0,  26) then
 
 				local playerPed = PlayerPedId()
 				if IsPedSittingInAnyVehicle(playerPed) then
@@ -267,5 +267,25 @@ Citizen.CreateThread(function()
 
 		end
 
+	end
+end)
+
+-- Disable Controls
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1)
+		local playerPed = PlayerPedId(-1)
+
+		if HasAlreadyEnteredMarker then
+			DisableControlAction(0, 263, true) -- Melee Attack 1
+			DisableControlAction(0, 264, true) -- Disable melee
+			DisableControlAction(0, 257, true) -- Disable melee
+			DisableControlAction(0, 140, true) -- Disable melee
+			DisableControlAction(0, 141, true) -- Disable melee
+			DisableControlAction(0, 142, true) -- Disable melee
+			DisableControlAction(0, 143, true) -- Disable melee
+		else
+			Citizen.Wait(500)
+		end
 	end
 end)
