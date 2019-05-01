@@ -2,6 +2,7 @@
 
 ESX Advanced Holdup
 
+Pro Tip: To rob a bank or store you must a your gun equipped.
 
 [INSTALLATION]
 
