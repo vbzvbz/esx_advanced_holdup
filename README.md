@@ -53,5 +53,5 @@ start esx_advanced_holdup
 ```
 
 #Credit
-Thanks to @lowheartrate for fixing the cop issue :D
+Thanks to @lowheartrate for fixing the cop count issue :D
 
