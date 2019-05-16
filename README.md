@@ -51,3 +51,7 @@ start esx_advanced_holdup
 	PoliceRequired		= 1 -- number of cops required to rob this bank
 },
 ```
+
+#Credit
+Thanks to @lowheartrate for fixing the cop issue :D
+
